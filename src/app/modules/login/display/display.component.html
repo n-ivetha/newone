@@ -1,0 +1,29 @@
+<div class="row" *ngIf="ele.email!=''; else noinfo">
+    <div class="col-xs-12">
+        
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="bgc">
+        <h3 style="margin-top: 27px;">Email Id : </h3>{{ ele.email }}
+        <br>
+        <br>
+        <h3 >Phone no : </h3>
+       {{ ele.phoneno }}
+        <br>
+        <br>
+        <h3>User Name : </h3>
+        {{ ele.uname }}
+        <br>
+        <br>
+        <h3 >Password : </h3>
+       {{ ele.password }}
+    </div>
+    </div>
+</div>
+<ng-template #noinfo>
+     <br>
+     <br>
+     <h3> please fill the form!!!!</h3>
+</ng-template>

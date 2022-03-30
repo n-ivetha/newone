@@ -1,0 +1,46 @@
+<div class=row>
+    <div class=col-md-7 >
+        
+        
+        <div class="row">
+            <div  class="col-lg-6" style="float:none;margin:auto;">
+                
+                <form (ngSubmit)="OnSubmit(f)" #f="ngForm" style="margin-top: 140px; background-color: antiquewhite; padding: 18px;">
+                    
+                       <div class="form-group">
+                           <label for="email"> Email : </label>
+                           <input type="email" class="form-control" id="email" name="email" ngModel  required>
+                       </div>
+
+                       <div class="form-group">
+                        <label for="phno"> Phone no:</label>
+                        <input type="tel" class="form-control" id="phno" name="phoneno" ngModel  required>
+                       </div>
+
+                       <div class="form-group">
+                        <label for="uname"> User Name : </label>
+                        <input type="text" class="form-control" id="uname" name="uname" ngModel  required>
+                       </div>
+
+                       <div class="form-group">
+                        <label for="password"> Password : </label>
+                        <input type="password" class="form-control" id="password" name="password" ngModel required  >
+                       </div>
+
+                       <br>
+                       
+                          <button type="submit" class="btn btn-danger" [disabled]="!f.valid"> sign in </button>
+                     
+                </form>
+                
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class=col-md-5>
+        <app-display [ele]="value"></app-display>
+    </div>
+
+</div>

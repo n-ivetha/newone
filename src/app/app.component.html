@@ -1,0 +1,14 @@
+<div *ngIf="!clicked">
+    <div class="back"> 
+        <h3 style="margin-left: 295px; color:white; margin-top: 250px; ">please select any of the button to navigate to the respective page</h3>
+        <br><button type="button" (click)="netflix()" class="btn btn-danger" style="margin-left: 612px; margin-right: 20px;margin-bottom: 295px;" >Netflix
+        </button >
+        <button type="button" (click)="login()" class="btn btn-danger" style="margin-bottom: 295px;">Login
+        </button>
+        
+    </div>
+</div>
+ <router-outlet>
+</router-outlet>
+
+
